@@ -15,6 +15,7 @@
 #include "BinarySearchTree.hpp"
 #include "LCAofBST.hpp"
 #include "HammingWeight.hpp"
+#include "OddEvenLinkedList.hpp"
 
 
 int main(int argc, const char * argv[]) {
@@ -63,8 +64,17 @@ int main(int argc, const char * argv[]) {
      */
     
     /* Hamming Weight */
+    /*
     uint32_t n = 65535;
     bitset<32> b(n);
     int bit = HammingWeight::hammingWeight(n);
     std::cout << "binary: " << b << "\n" << "number of 1: " << bit << std::endl;
+    */
+    
+    /* OddEvenLinkedList */
+    vector<int> vlist{1,2,3,4,5};
+    LinkedList* list = new LinkedList(vlist);
+    list->print();
+    OddEvenLinkedList::oddEvenList(list->head);
+    list->print();
 }
