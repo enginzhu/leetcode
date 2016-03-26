@@ -16,6 +16,7 @@
 #include "LCAofBST.hpp"
 #include "HammingWeight.hpp"
 #include "OddEvenLinkedList.hpp"
+#include "RemoveDuplicatesFromSortedList.hpp"
 
 
 int main(int argc, const char * argv[]) {
@@ -72,9 +73,16 @@ int main(int argc, const char * argv[]) {
     */
     
     /* OddEvenLinkedList */
-    vector<int> vlist{1,2,3,4,5};
+    /*vector<int> vlist{1,2,3,4,5};
     LinkedList* list = new LinkedList(vlist);
     list->print();
     OddEvenLinkedList::oddEvenList(list->head);
+    list->print();
+    */
+
+    /* RemoveDuplicatesFromSortedList */
+    vector<int> vlist{1,2,3,2,1};
+    LinkedList* list = new LinkedList(vlist);
+    RemoveDuplicatesFromSortedList::deleteDuplicates(list->head);
     list->print();
 }
