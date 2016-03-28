@@ -17,6 +17,7 @@
 #include "HammingWeight.hpp"
 #include "OddEvenLinkedList.hpp"
 #include "RemoveDuplicatesFromSortedList.hpp"
+#include "HappyNumber.hpp"
 
 
 int main(int argc, const char * argv[]) {
@@ -81,8 +82,16 @@ int main(int argc, const char * argv[]) {
     */
 
     /* RemoveDuplicatesFromSortedList */
-    vector<int> vlist{1,2,3,2,1};
+    /*vector<int> vlist{1,2,3,2,1};
     LinkedList* list = new LinkedList(vlist);
     RemoveDuplicatesFromSortedList::deleteDuplicates(list->head);
     list->print();
+    */
+    
+    
+    /* HappyNumber */
+    bool isHappy = HappyNumber::isHappy(20);
+    std::cout << isHappy << std::endl;
+    
+    
 }
