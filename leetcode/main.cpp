@@ -18,6 +18,7 @@
 #include "OddEvenLinkedList.hpp"
 #include "RemoveDuplicatesFromSortedList.hpp"
 #include "HappyNumber.hpp"
+#include "UglyNumber.hpp"
 
 
 int main(int argc, const char * argv[]) {
@@ -90,8 +91,12 @@ int main(int argc, const char * argv[]) {
     
     
     /* HappyNumber */
-    bool isHappy = HappyNumber::isHappy(20);
-    std::cout << isHappy << std::endl;
+    /*bool isHappy = HappyNumber::isHappy(20);
+    std::cout << isHappy << std::endl;*/
+    
+    /** UglyNumber */
+    bool isUgly = UglyNumber::isUgly(-2147483648);
+    std::cout << isUgly << std::endl;
     
     
 }
