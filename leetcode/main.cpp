@@ -95,8 +95,10 @@ int main(int argc, const char * argv[]) {
     std::cout << isHappy << std::endl;*/
     
     /** UglyNumber */
-    bool isUgly = UglyNumber::isUgly(-2147483648);
-    std::cout << isUgly << std::endl;
+    /*bool isUgly = UglyNumber::isUgly(-2147483648);
+    std::cout << isUgly << std::endl;*/
+    
+    /** LinkedList Cycle */
     
     
 }
